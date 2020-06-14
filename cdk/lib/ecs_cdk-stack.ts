@@ -166,7 +166,7 @@ export class EcsCdkStack extends cdk.Stack {
 
     const sourceAction = new codepipeline_actions.GitHubSourceAction({
       actionName: 'GitHub_Source',
-      owner: 'user-name',
+      owner: 'nagendraversatile',
       repo: 'amazon-ecs-cdk-cicd',
       branch: 'master',
       oauthToken: cdk.SecretValue.secretsManager("/my/github/token"),
